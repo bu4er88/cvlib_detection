@@ -14,6 +14,8 @@ while cap.isOpened():
         print('Capturing is stopped')
         break
 
+    image = cv2.flip(image, 1)
+
     bbox, labels, confidence = cvlib.detect_common_objects(
         image, confidence=0.3, nms_thresh=0.5, model='yolov4-tiny', enable_gpu=False)
 
