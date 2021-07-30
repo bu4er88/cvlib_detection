@@ -1,1 +1,3 @@
-pip install
+cvlib
+opencv-python
+tensorflow-cpu
